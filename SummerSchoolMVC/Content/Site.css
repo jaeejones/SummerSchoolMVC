@@ -2,10 +2,12 @@
     background-color:#fcb5b5;
     padding-top: 50px;
     padding-bottom: 20px;
+  
    
 }
 .jumbotron{
     background-color:olive;
+    box-shadow: 10px 10px 5px #888888;
 }
 h1{
     font-family: Georgia;
