@@ -33,6 +33,14 @@ h2{
     background-color:olive;
     box-shadow: 10px 10px 5px #888888;
 }
+.btn
+{  padding: 6px 16px;
+    border: 0 none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color:peru;
+     box-shadow: 10px 10px 5px #888888;
 }
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
