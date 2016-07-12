@@ -19,11 +19,18 @@ h1{
 }
 a
 {
-   color:red;
+   color:coral;
    font-family:Verdana;
 }
 p{
     font-family: Georgia;
+}
+h2{
+    width: 120px;
+    height: 35px;
+    background-color:olive;
+    box-shadow: 10px 10px 5px #888888;
+}
 }
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
