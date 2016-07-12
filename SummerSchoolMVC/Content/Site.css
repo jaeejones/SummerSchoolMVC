@@ -1,14 +1,30 @@
 ﻿body {
+    background-color:#fcb5b5;
     padding-top: 50px;
     padding-bottom: 20px;
+   
 }
-
+.jumbotron{
+    background-color:olive;
+}
+h1{
+    font-family: Georgia;
+}
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+ 
+ 
 }
-
+a
+{
+   color:red;
+   font-family:Verdana;
+}
+p{
+    font-family: Georgia;
+}
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
