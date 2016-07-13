@@ -48,6 +48,23 @@ namespace SummerSchoolMVC.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "StudentsID,FirstName,LastName,EnrollmentFee")] Student student)
         {
+            if (student.LastName == "Longbottom" && db.Students.Count() <= 10)
+            {
+                student.EnrollmentFee = 0;
+            }
+            else if (student.LastName == "Potter")
+            {
+                student.EnrollmentFee = 100;
+            }
+            else if (student.FirstName[0] == student.LastName[0])
+            {
+                student.EnrollmentFee = 180;
+            }
+            else
+            {
+                student.EnrollmentFee = 200;
+            }
+
             if (ModelState.IsValid)
             {
                 db.Students.Add(student);
@@ -122,6 +139,7 @@ namespace SummerSchoolMVC.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
-        }
+       }
+        
     }
 }
